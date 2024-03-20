@@ -2,10 +2,16 @@
   text-align: left;
 }
 
+.section-title {
+  text-align: center;
+}
+
 .programmas {
   margin-top: 20px; /* Optionele marge boven de vaardighedenlijst */
 }
 
 .programma {
   margin-bottom: 10px; /* Optionele marge tussen elk vaardigheidspunt */
+  font-size: 20px; /* Fontgrootte voor de vaardigheden */
 }
+
