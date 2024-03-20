@@ -1,5 +1,5 @@
 .cursussen {
-  text-align: left; /* Hiermee wordt de tekst binnen de .cursussen sectie links uitgelijnd */
+  text-align: center; /* Hiermee wordt de tekst binnen de .cursussen sectie links uitgelijnd */
 }
 
 .cursus {
@@ -7,6 +7,6 @@
 }
 
 .cursus-titel {
-  text-align: center; /* Hiermee wordt de tekst binnen .cursus-titel gecentreerd */
+  text-align: left; /* Hiermee wordt de tekst binnen .cursus-titel gecentreerd */
 }
 
