@@ -10,3 +10,13 @@
   text-align: left; /* Hiermee wordt de tekst binnen .cursus-titel gecentreerd */
 }
 
+.cursus {
+  text-align: center; /* Tekst in het midden uitlijnen */
+}
+
+.cursus-item {
+  text-align: left; /* Tekst van de lijstitems links uitlijnen */
+  list-style-position: inside; /* Plaats de bullets aan de binnenkant van de lijstitems */
+}
+
+
