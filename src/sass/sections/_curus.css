@@ -7,5 +7,6 @@
 }
 
 .cursus-titel {
-  text-align: left; /* Hiermee wordt de tekst binnen .cursus-titel links uitgelijnd */
+  text-align: center; /* Hiermee wordt de tekst binnen .cursus-titel gecentreerd */
 }
+
