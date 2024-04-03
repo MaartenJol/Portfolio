@@ -1,4 +1,4 @@
-# Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/cobiwave/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/simplefolio)
+# Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/cobiwave/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/simplefolio)
 
 ## A minimal portfolio template for Developers!
 
@@ -17,7 +17,7 @@
 ⚡️ Optimized with Parcel\
 ⚡️ Well organized documentation
 
-To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
+To view the demo: **[click here]([https://the-simplefolio.netlify.app/](https://cheerful-travesseiro-494e8a.netlify.app/))**
 
 ---
 
@@ -31,78 +31,13 @@ To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites 📋
+## Clone repository
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
-
-```
-node@v16.4.2 or higher
-npm@7.18.1 or higher
-git@2.30.1 or higher
-```
-
-Also, you can use [Yarn](https://yarnpkg.com/) instead of NPM ☝️
-
-```
-yarn@v1.22.10 or higher
-```
-
----
-
-## How To Use 🔧
-
-From your command line, first clone Simplefolio:
-
-```bash
-# Clone the repository
-$ git clone https://github.com/cobiwave/simplefolio
-
-# Move into the repository
-$ cd simplefolio
-
-# Remove the current origin repository
-$ git remote remove origin
-```
-
-After that, you can install the dependencies either using NPM or Yarn.
-
-Using NPM: Simply run the below commands.
-
-```bash
-# 2022 Update - Fix Dependencies
-$ npm audit fix
-$ npm i @parcel/transformer-sass
-
-# Install dependencies
-$ npm install
-
-# Start the development server
-$ npm start
-```
-
-Using Yarn: Be aware of that you'll need to delete the `package-lock.json` file before executing the below commands.
-
-```bash
-# Install dependencies
-$ yarn
-
-# Start the development server
-$ yarn start
-```
-
-**NOTE**:
-If your run into issues installing the dependencies with NPM, use this below command:
-
-```bash
-# Install dependencies with all permissions
-$ sudo npm install --unsafe-perm=true --allow-root
-```
-
-Once your server has started, go to this url `http://localhost:1234/` to see the portfolio locally. It should look like the below screenshot.
-
-<h2 align="center">
-  <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.png" alt="Simplefolio" width="100%">
-</h2>
+- Klik op '+' rechtsboven in je scherm en selecteer 'Import repository'
+- Vul onderstaande URL in bij 'Your old repository's clone URL':
+  https://github.com/TimValks/portfolio
+- Geef je nieuwe repository een naam
+- Druk op 'Begin import' rechts onder in
 
 ---
 
@@ -118,22 +53,22 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 - On `.hero-cta`, put your custom button label.
 
 ```html
-<!-- **** Hero Section **** -->
-<section id="hero" class="jumbotron">
-  <div class="container">
-    <h1 class="hero-title load-hidden">
-      Hi, my name is <span class="text-color-main">Your Name</span>
-      <br />
-      I'm the Unknown Developer.
-    </h1>
-    <p class="hero-cta load-hidden">
-      <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">
-        Know more
-      </a>
-    </p>
-  </div>
-</section>
-<!-- /END Hero Section -->
+ <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <img src="assets/Logo.png" alt="Logo" class="logo" height="250px" width="600px" style="margin-bottom: 50px;">
+        <h1 class="hero-title load-hidden">
+          Welkom, op de portfolio pagina van <span class="text-color-main">**Tim Valks**</span>.
+          <br />
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Meer informatie</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
 ```
 
 ### (2) About Section
@@ -259,8 +194,44 @@ Go to `/src/index.html` and put your information, there are 5 sections:
   ...
 </section>
 ```
+### (4) Cursus Section
+- On 'li class="cursus-item", replace the current courses with the name of the course you followed
+- Delete unused rows
+  
+    <!-- **** Cursus Section **** -->
+<section id="cursussen" class="cursussen">
+  <div class="container">
+    <h2 class="section-title">Cursussen</h2>
+    <ul class="cursus">
+      <li class="cursus-item">Extract, Transform and Load Data in Power Bi - Coursera</li>
+      <li class="cursus-item">Data Modeling in Power Bi - Coursera</li>
+      <li class="cursus-item">Data Analyses and Visualization with Power Bi - Coursera</li>
+      <li class="cursus-item">SQL Fundamentals - Datacamp</li>
+      <li class="cursus-item">Associate Data Analyses in SQL - Datacamp</li>
+      <li class="cursus-item">Data Visualization with Python - Coursera</li>
+      <li class="cursus-item">Professional Scrum Master 1</li>
+    </ul>
+  </div>
+</section>
 
-### (4) Contact Section
+### (6) Tools section
+- Replace/add tools if necessary, by replacing the logo at '<img src=' and the name after 'width=20px>'
+
+<section id="vaardigheden" class="vaardigheden">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="programmas">
+      <div class="programma"><img src="assets/Powerbi.png" alt="Power BI logo" height=20px width=20px> Power BI</div>
+      <div class="programma"><img src="assets/sqllogo.png" alt="SQL logo" height=20px width=20px> SQL</div>
+      <div class="programma"><img src="assets/Python.png" alt="Python logo" height=20px width=20px> Python</div>
+      <div class="programma"><img src="assets/pandas.png" alt="Pandas logo" height=20px width=20px> Pandas</div>
+      <div class="programma"><img src="assets/github.png" alt="Github logo" height=20px width=20px> Github</div>
+      <div class="programma"><img src="assets/azure.png" alt="Azure logo" height=20px width=20px> Azure</div>
+    </div>
+  </div>
+</section>
+
+### (7) Contact Section
 
 - On `<p>` tag with class name `.contact-wrapper__text`, include some custom call-to-action message.
 - On `<a>` tag, put your email address on `href` property.
@@ -285,7 +256,7 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 <!-- /END Contact Section -->
 ```
 
-### (5) Footer Section
+### (8) Footer Section
 
 - Put your Social Media URL on each `href` attribute of the `<a>` tags.
 - If you an additional Social Media account different than Twitter, Linkedin or GitHub, then go to [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) and search for the icon's class name you are looking.
