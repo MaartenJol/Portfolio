@@ -197,7 +197,8 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 ### (4) Cursus Section
 - On 'li class="cursus-item", replace the current courses with the name of the course you followed
 - Delete unused rows
-  
+
+```html 
     <!-- **** Cursus Section **** -->
 <section id="cursussen" class="cursussen">
   <div class="container">
@@ -213,10 +214,12 @@ Go to `/src/index.html` and put your information, there are 5 sections:
     </ul>
   </div>
 </section>
+```
 
-### (6) Tools section
+### (5) Tools section
 - Replace/add tools if necessary, by replacing the logo at '<img src=' and the name after 'width=20px>'
 
+```html 
 <section id="vaardigheden" class="vaardigheden">
   <div class="container">
     <h2 class="section-title">Skills</h2>
@@ -230,8 +233,8 @@ Go to `/src/index.html` and put your information, there are 5 sections:
     </div>
   </div>
 </section>
-
-### (7) Contact Section
+```
+### (6) Contact Section
 
 - On `<p>` tag with class name `.contact-wrapper__text`, include some custom call-to-action message.
 - On `<a>` tag, put your email address on `href` property.
@@ -256,7 +259,7 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 <!-- /END Contact Section -->
 ```
 
-### (8) Footer Section
+### (7) Footer Section
 
 - Put your Social Media URL on each `href` attribute of the `<a>` tags.
 - If you an additional Social Media account different than Twitter, Linkedin or GitHub, then go to [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) and search for the icon's class name you are looking.
