@@ -1,35 +1,13 @@
-# Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/cobiwave/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/simplefolio)
+# Portfolio ⚡️ 
 
-## A minimal portfolio template for Developers!
-
-<h2 align="center">
-  <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
-  <br>
-</h2>
-
-## Features
-
-⚡️ Modern UI Design + Reveal Animations\
-⚡️ One Page Layout\
-⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Optimized with Parcel\
-⚡️ Well organized documentation
-
-To view the demo: **[click here]([https://the-simplefolio.netlify.app/](https://cheerful-travesseiro-494e8a.netlify.app/))**
+Voorbeeld: **[click here]([https://the-simplefolio.netlify.app/](https://cheerful-travesseiro-494e8a.netlify.app/))**
 
 ---
 
-## Why do you need a portfolio? ☝️
+## Stappenplan om de template aan te passen
+Hieronder zie je 8 onderdelen waarmee je bovenstaand voorbeeld kan aanpassen naar je eigen portfolio.
 
-- Professional way to showcase your work
-- Increases your visibility and online presence
-- Shows you’re more than just a resume
-
-## Getting Started 🚀
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Voordat je dit kan aanpassen moet je deze repository clonen naar je eigen pagina. Dat is hier onder uitgelegd.
 
 ## Clone repository
 
@@ -41,16 +19,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ---
 
-## Template Instructions:
+## Template instructies:
 
-### Step 1 - STRUCTURE
+### Step 1 - STRUCTUUR
 
-Go to `/src/index.html` and put your information, there are 5 sections:
+Ga naar `/src/index.html` en pas de 8 verschillende secties aan. Bij sommige onderdelen wordt ergens naar gelinkt (bijvoorbeeld je CV of een dashboard), deze bestanden moet je toevoegen aan `/src/assets`:
 
-### (1) Hero Section
+### (1) Hero Sectie
 
-- On `.hero-title`, put your custom portfolio title.
-- On `.hero-cta`, put your custom button label.
+- Bij `.hero-title`, kan je de titel van je portfolio aanpassen.
+- Bij `.hero-cta`, kan je tekst in de knop aanpassen.
 
 ```html
  <!-- **** Hero Section **** -->
@@ -71,132 +49,176 @@ Go to `/src/index.html` and put your information, there are 5 sections:
     <!-- /END Hero Section -->
 ```
 
-### (2) About Section
+### (2) About section
 
-- On `<img>` tag, fill the `src` property with your profile picture path, your picture must be located inside `/src/assets/` folder.
-- On `<p>` tag with class name `.about-wrapper__info-text`, include information about you, I recommend to put 2 paragraphs in order to work well and a maximum of 3 paragraphs.
-- On last `<a>` tag, include your CV (.pdf) path on `href` property, your resume CV must be located inside `/src/assets/` folder.
+- Bij `<img>`, vul het `src` pad in om bij jou profielfoto te komen, zoals gezegd moet je profielfoto in de `/src/assets/` map staan. De profielfoto staat er nu in als `src="assets/trainees--2.jpg"`
+- Bij `<p>` met class name `.about-wrapper__info-text`, voeg informatie over jezelf toe, ik zou een tekst maken van 2 alineas waarbij je iets over jezelf verteld en het werk dat je nu doet.
+- Als laatste `<a>` , voeg je CV (.pdf) pad toe bij `href`, je CV moet weer in de `/src/assets/` map staan.
 
 ```html
-<!-- **** About Section **** -->
-<section id="about">
-  <div class="container">
-    <h2 class="section-title load-hidden">About me</h2>
-    <div class="row about-wrapper">
-      <div class="col-md-6 col-sm-12">
-        <div class="about-wrapper__image load-hidden">
-          <img
-            alt="Profile Image"
-            class="img-fluid rounded shadow-lg"
-            height="auto"
-            width="300px"
-            src="assets/profile.jpg"
-            alt="Profile Image"
-          />
+ <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">Over mij</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/trainees--2.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                
+Hallo, ik ben Tim Valks, 23 jaar oud en woonachtig in Ommel. Na het behalen van mijn master Human Movement Sciences aan de Maastricht University, heb ik een jaar lang als bewegingswetenschapper gewerkt bij NAC Breda. Gedurende deze periode was ik verantwoordelijk voor de data-analyse van het onder-21 team. Mijn passie voor het werken met data groeide gestaag, wat mij ertoe bracht te kiezen voor het traineeship van de Talent Academy van Veneficus. Hier heb ik mezelf verder ontwikkeld door middel van trainingen en praktische opdrachten, gericht op het werken met verschillende programma's zoals Power BI, SQL en Python.
+<br><br>
+                Mijn achtergrond in bewegingswetenschappen, gecombineerd met mijn nieuwe expertise in data-analyse, stelt mij in staat om van een abstract vraagstuk tot een goed eindresultaat te komen door mijn analytische en resultaatgerichte aanpak. Vanwege mijn bescheiden karakter observeer ik aanvankelijk alles zorgvuldig om vervolgens met een sterke en goed onderbouwde argumentatie voor resultaten te zorgen.
+              <p class="about-wrapper__info-text">
+                Wilt u meer over mijn achtergrond weten dan kan u hieronder mijn CV vinden.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/CV Tim Valks.pdf"
+                >
+                  Bekijk CV
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="about-wrapper__info load-hidden">
-          <p class="about-wrapper__info-text">
-            This is where you can describe about yourself. The more you describe
-            about yourself, the more chances you can!
-          </p>
-          <p class="about-wrapper__info-text">
-            Extra Information about you! like hobbies and your goals.
-          </p>
-          <span class="d-flex mt-3">
-            <a
-              rel="noreferrer"
-              target="_blank"
-              class="cta-btn cta-btn--resume"
-              href="assets/resume.pdf"
-            >
-              View Resume
-            </a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /END About Section -->
+    </section>
+    <!-- /END About Section -->
 ```
 
 ### (3) Projects Section
 
-- Each project lives inside a `row`.
-- On `<h3>` tag with class name `.project-wrapper__text-title`, include your project title.
-- On `<p>` tag with `loremp ipsum` text, include your project description.
-- On first `<a>` tag, put your project url on `href` property.
-- On second `<a>` tag, put your project repository url on `href` property.
+- Elk project heeft zijn eigen `row`.
+- Bij `<h3>` met class name `.project-wrapper__text-title`, voeg de project titel toe.
+- Bij `<p>` met `loremp ipsum` tekst, voeg je project beschrijving toe.
+- Bij `<a>` , voeg een deel van je project toe (bijvoorbeeld een deel van een dashboard).
+- Optioneel bij een tweede `<a>`, voeg bijvoorbeeld de project omschrijving toe.
 
 ---
 
-- Inside `<div>` tag with class name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url in the `href` property of the `<a>` tag.
-- Recommended size for project image (1366 x 767), your project image must be located inside `/src/assets/` folder.
+- In de `<div>` tag met class name `.project-wrapper__image`, voeg een afbeelding van het project toe bij `src` in `<img>` en voeg weer op dezelfe manier vanuit `src/assets/` dit bestand toe.
+- Hieronder zie je 2 voorbeelden van projecten die zijn toegevoegd aan het voorbeeld portfolio. Waarbij het eerste project  1 `<a>` heeft en het tweede project twee `<a>`.
 
 ```html
-<!-- **** Projects Section **** -->
-<section id="projects">
-  ...
-  <!-- Notice: each .row is a project -->
-  <div class="row">
-    <div class="col-lg-4 col-sm-12">
-      <div class="project-wrapper__text load-hidden">
-        <h3 class="project-wrapper__text-title">Project Title</h3>
-        <div>
-          <p class="mb-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            neque, ipsa animi maiores repellendus distinctio aperiam earum dolor
-            voluptatum consequatur blanditiis inventore debitis fuga numquam
-            voluptate ex architecto itaque molestiae.
-          </p>
-        </div>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="cta-btn cta-btn--hero"
-          href="#!"
-        >
-          See Live
-        </a>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="cta-btn text-color-main"
-          href="#!"
-        >
-          Source Code
-        </a>
-      </div>
-    </div>
-    <div class="col-lg-8 col-sm-12">
-      <div class="project-wrapper__image load-hidden">
-        <a rel="noreferrer" href="#!" target="_blank">
-          <div
-            data-tilt
-            data-tilt-max="4"
-            data-tilt-glare="true"
-            data-tilt-max-glare="0.5"
-            class="thumbnail rounded js-tilt"
-          >
-            <img
-              alt="Project Image"
-              class="img-fluid"
-              src="assets/project.jpg"
-            />
+    <!-- **** Projects Section **** -->
+    <section id="projecten">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projecten</h2>
+
+    <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">PLUS klantherkomstonderzoek</h3>
+                <div>
+                  <p class="mb-4">
+                    Elk jaar voert de PLUS een onderzoek uit naar de herkomst van alle klanten die hun winkels bezoeken. Dit onderzoek werd gerapporteerd in PDF-formaat en was daardoor erg statisch. Het was mijn taak om dit rapport dynamisch te maken in Power BI en tegelijkertijd ervoor te zorgen dat het proces van het laden tot het implementeren van een dashboard volledig geautomatiseerd werd.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="assets/Portfolio.pbix"
+                >
+                  Bekijk dashboard
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/PLUS.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- /END Project -->
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Criminaliteit</h3>
+                <div>
+                  <p class="mb-4">
+                    Vanuit Veneficus is mij aan mij gevraagd of ik een eindopdracht kon bedenken en maken die zou aansluiten op de Power Bi cursussen die trainees gaan volgen. Hiervoor heb ik van de CBS data opgehaald over de criminaliteit in Nederland. Vervolgens heb ik deze getransformeerd om er uiteindelijk verschillende dashboards mee te maken.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="assets/Criminaliteit.pbix"
+                >
+                  Zie dashboard
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="assets/Opdracht_Criminaliteit_in_Nederland.pdf"
+                >
+                  Zie opdracht
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/Criminaliteit.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
   ...
 </section>
 ```
 ### (4) Cursus Section
-- On 'li class="cursus-item", replace the current courses with the name of the course you followed
-- Delete unused rows
+- Bij `<li class="cursus-item">`, vervang de huidige cursus namen met de cursussen die je zelf hebt gevolgd.
+- Verwijder de rijen die je niet gebruikt of voeg rijen toe als je meer cursussen hebt gevolgd.
 
 ```html 
     <!-- **** Cursus Section **** -->
@@ -217,7 +239,7 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 ```
 
 ### (5) Tools section
-- Replace/add tools if necessary, by replacing the logo at '<img src=' and the name after 'width=20px>'
+- Vervang/ voeg tools toe, als je tools gaat vervangen dan moet je de afbeelding bij `<img>` vervangen en de naam na `width=20px>`
 
 ```html 
 <section id="vaardigheden" class="vaardigheden">
@@ -236,34 +258,35 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 ```
 ### (6) Contact Section
 
-- On `<p>` tag with class name `.contact-wrapper__text`, include some custom call-to-action message.
-- On `<a>` tag, put your email address on `href` property.
+- Bij `<p>` met class name `.contact-wrapper__text`, voeg je emailadres en telefoonnummer toe quote toe.
+- Bij `<a>` , voeg je emailadres toe bij `href` 
 
 ```html
-<!-- **** Contact Section **** -->
-<section id="contact">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-wrapper load-hidden">
-      <p class="contact-wrapper__text">[Put your call to action here]</p>
-      <a
-        rel="noreferrer"
-        target="_blank"
-        class="cta-btn cta-btn--resume"
-        href="mailto:example@email.com"
-        >Call to Action</a
-      >
-    </div>
-  </div>
-</section>
-<!-- /END Contact Section -->
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">Email: tim.valks@veneficus.nl <br>
+        Telefoonnummer: +31639123801</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:tim.valks@veneficus.nl"
+            >Call to Action</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
 ```
 
 ### (7) Footer Section
 
-- Put your Social Media URL on each `href` attribute of the `<a>` tags.
-- If you an additional Social Media account different than Twitter, Linkedin or GitHub, then go to [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) and search for the icon's class name you are looking.
-- You can delete or add as many `<a>` tags your want.
+- Voeg je Social media URL toe aan elk `href` van `<a>`.
+- Als je andere social media accounts wil toevoegen dan Twitter, Linkedin or GitHub, ga dan naar [Font Awesome Icons](https://fontawesome.com/v4.7.0/icons/) en zoek naar de logo class names..
+- Je kan zoveel `<a>` toevoegen en verwijderen als je wil.
 
 ```html
 <footer class="footer navbar-static-bottom">
@@ -285,10 +308,10 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 
 ### Step 2 - STYLES
 
-Change the color theme of the website - (choose 2 colors to create a gradient)
+De achtergrond kleur is nu de kleur van Veneficus. Deze zal behouden moeten worden tenzij anders besproken met Veneficus.
 
-Go to `/src/sass/abstracts/_variables.scss` and only change the values for this variables `$main-color` and `$secondary-color` with your prefered HEX color.
-If you want to get some gradients inspiration I highly recommend you to check this website [UI Gradient](https://uigradients.com/#BrightVault)
+Ga naar `/src/sass/abstracts/_variables.scss` en verander de kleurcode van `$main-color` en `$secondary-color` met de HEX kleurcode die je wil.
+
 
 ```scss
 // Default values
@@ -300,35 +323,17 @@ $secondary-color: #0aaf68;
 
 ## Deployment 📦
 
-Once you finish your setup. You need to put your website online!
+Als je klaar ben met je setup. Dan moet je je portfolio online gaan zetten!
 
-I highly recommend to use [Netlify](https://netlify.com) because it is super easy.
+Ik heb hiervoor [Netlify](https://netlify.com) gebruikt, dit werkt heel makkelijk en voor de hand liggend.
 
 ## Others versions 👥
 
 [Gatsby Simplefolio](https://github.com/cobiwave/gatsby-simplefolio) by [Jacobo Martinez](https://github.com/cobiwave)\
 [Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
 
-## Technologies used 🛠️
-
-- [Parcel](https://parceljs.org/) - Bundler
-- [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Frontend component library
-- [Sass](https://sass-lang.com/documentation) - CSS extension language
-- [ScrollReveal.js](https://scrollrevealjs.org/) - JavaScript library
-- [Tilt.js](https://gijsroge.github.io/tilt.js/) - JavaScript tiny parallax library
-
-## Authors
-
-- **Jacobo Martinez** - [https://github.com/cobiwave](https://github.com/cobiwave)
-
-## Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3a029bfd-575c-41e5-8249-c864d482c2e5/deploy-status)](https://app.netlify.com/sites/the-simplefolio/deploys)
 
 ## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments 🎁
-
-I was motivated to create this project because I wanted to contribute on something useful for the dev community, thanks to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie)
